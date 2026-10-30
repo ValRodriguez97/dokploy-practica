@@ -4,10 +4,10 @@ const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
 res.json({
-mensaje: '¡Aplicación desplegada con Dokploy!',
-institucion: 'Universidad del Quindío',
-programa: 'Ingeniería de Sistemas y Computación',
-curso: 'Administración de Infraestructura de TI',
+mensaje: 'Aplicacion desplegada con Dokploy!',
+institucion: 'Universidad del Quindio',
+programa: 'Ingenieria de Sistemas y Computacion',
+curso: 'Administracion de Infraestructura de TI',
 plataforma: 'Dokploy PaaS',
 fecha: new Date().toISOString()
 });
@@ -30,6 +30,6 @@ free: Math.round(require('os').freemem() / 1024 / 1024) + ' MB'
 });
 
 app.listen(port, '0.0.0.0', () => {
-console.log(\Servidor corriendo en puerto \\);
-console.log(\Plataforma: Dokploy PaaS\);
+console.log('Servidor corriendo en puerto ${port}');
+console.log('Plataforma: Dokploy PaaS');
 });
